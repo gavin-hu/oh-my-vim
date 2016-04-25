@@ -1,6 +1,6 @@
 Oh My Vim
 =========
-Oh My Vim 是一套开箱即可用的 Vim 配置
+Oh My Vim 是一套开箱即用的 Vim 配置框架
 ![截图](https://raw.githubusercontent.com/gavin-hu/oh-my-vim/master/oh-my-vim.png)
 
 操作系统
