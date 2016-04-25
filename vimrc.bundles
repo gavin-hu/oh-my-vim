@@ -1,0 +1,38 @@
+" Vundle Begin {
+    filetype off                       " 关闭文件类型侦听
+    set rtp+=~/.vim/bundle/Vundle.vim  " Vim 运行时路径包含 Vundle
+    call vundle#begin()
+" }
+
+
+" Bundles {
+
+    " Required {
+        Plugin 'VundleVim/Vundle.vim'  " Vundle 插件
+    " }
+
+    " Schemes {
+        Plugin 'altercation/vim-colors-solarized'
+        Plugin 'tomasr/molokai'
+    " }
+
+    " General {
+	if count(g:bundle_groups, 'general')
+            Plugin 'scrooloose/nerdtree'
+            Plugin 'kien/ctrlp.vim'
+            Plugin 'bling/vim-airline'
+        endif
+    " }
+
+    " Golang {
+	if count(g:bundle_groups, 'go')
+            Plugin 'fatih/vim-go'
+        endif
+    " }
+" }
+
+" Vundle End {
+    call vundle#end()            
+    filetype plugin indent on          " 启用文件类型侦听 
+" }
+

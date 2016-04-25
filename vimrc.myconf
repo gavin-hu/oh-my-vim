@@ -1,0 +1,5 @@
+" 定义插件组
+let g:bundle_groups=['general']
+
+" 定义配色方案
+let g:color_scheme='molokai'
