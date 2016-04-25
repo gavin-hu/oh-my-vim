@@ -10,9 +10,10 @@ Oh My Vim 是一套开箱即可用的 Vim 配置
 
 环境准备
 ========
-1. curl
+1. vim
 2. git
-3. ctags (非必须)
+3. curl
+3. ctags      (非必须)
 
 一键安装
 ========
