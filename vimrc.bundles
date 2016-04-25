@@ -22,11 +22,12 @@
             Plugin 'bling/vim-airline'
             Plugin 'tpope/vim-surround'
             Plugin 'jiangmiao/auto-pairs'
+            Plugin 'majutsushi/tagbar'
         endif
     " }}}
 
     " Golang {{{
-	if count(g:bundle_groups, 'go')
+	if count(g:bundle_groups, 'golang')
             Plugin 'fatih/vim-go'
         endif
     " }}}
