@@ -26,15 +26,13 @@ function validate() {
         exit 1
     fi
 
-    if [ -n $OH_MY_VIM ]; then
+    if [$OH_MY_VIM ]; then
         if ! [ -d $OH_MY_VIM]; then
             echo "Oh My Vim 未下载！"
         fi
     else
         if ! [ -d ~/.oh-my-vim ]; then
-            echo "Oh My Vim 未下载!"
-        else 
-            echo haha
+            echo "Oh My Vim 未下载!" 
         fi
     fi
 
@@ -62,9 +60,9 @@ function dispatch() {
 }
 
 function install() {
-    if [ -d $OH_MY_VIM -a -f $OH_MY_VIM/vimrc ]; then
+    if [ $OH_MY_VIM ]; then
         ln -sf $OH_MY_VIM/vimrc ~/.vimrc
-    else if [ -d ~/.oh-my-vim -a -f ~/.oh-my-vim/vimrc ]; then
+    else
         ln -sf ~/.oh-my-vim/vimrc ~/.vimrc
     fi
 }
