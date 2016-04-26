@@ -5,12 +5,12 @@
         endif
 " }}}
 
-" 加载vimrc.myconf 文件 {{{
-    " 加载 Oh My Vim 默认 vimrc.myconf 配置
-	source $OH_MY_VIM/vimrc.myconf
-    " 加载 Oh My Vim 用户 vimrc.myconf 配置 
-    if  filereadable(expand("~/.vimrc.myconf"))
-    	source ~/.vimrc.myconf
+" 加载vimrc.options 文件 {{{
+    " 加载 Oh My Vim 默认 vimrc.options 配置
+	source $OH_MY_VIM/vimrc.options
+    " 加载 Oh My Vim 用户 vimrc.options 配置 
+    if  filereadable(expand("~/.vimrc.options"))
+    	source ~/.vimrc.options
     endif
 " }}}
 
