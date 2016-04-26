@@ -21,6 +21,7 @@
 
 " 设置基础配置 {{{
     set nocompatible        " 设置非兼容模式
+    let mapleader=";"       " 设置 Leader 键
 " }}}
 
 " 设置配色方案 {{{
@@ -63,6 +64,17 @@
     set foldenable                 " 启用折叠
     set foldmethod=marker          " 设置折叠方式
 " }}}
+
+" 优化插件配置 {{{
+    " NERDTree 配置优化 {{{
+        " map <C-n> :NERDTreeToggle<CR>        " 设置快捷键
+        autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+    " }}}
+    " NERDTree Tabs 配置优化 {{{
+        map <Leader>n <plug>NERDTreeTabsToggle<CR>
+    " }}}
+" }}}
+
 
 " 加载 vimrc.local 文件 {{{
     if filereadable(expand("~/.vimrc.local"))

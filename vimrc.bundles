@@ -18,6 +18,7 @@
     " General {{{
 	    if count(g:bundle_groups, 'general')
             Plugin 'scrooloose/nerdtree'
+            Plugin 'jistr/vim-nerdtree-tabs'
             Plugin 'kien/ctrlp.vim'
             Plugin 'bling/vim-airline'
             Plugin 'tpope/vim-surround'
