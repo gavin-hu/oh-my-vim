@@ -4,7 +4,7 @@
     call vundle#begin()
 " }}}
 
-" Bundles {{{
+" Default Bundles {{{
 
     " Required {{{
         Plugin 'VundleVim/Vundle.vim'  " Vundle 插件
@@ -27,11 +27,17 @@
     " }}}
 
     " Golang {{{
-	if count(g:bundle_groups, 'golang')
+     	if count(g:bundle_groups, 'golang')
             Plugin 'fatih/vim-go'
         endif
     " }}}
 " }}}
+
+" Custom Bundles {{{
+    if filereadable(expand("~/.vimrc.bundles"))
+         source ~/.vimrc.bundles
+    endif 
+" }}} 
 
 " Vundle End {{{
     call vundle#end()            

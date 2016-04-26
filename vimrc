@@ -17,10 +17,6 @@
 " 加载 vimrc.bundles 文件 {{{
     " 加载 Oh My Vim 默认 vimrc.bundles 配置
     source $OH_MY_VIM/vimrc.bundles
-    " 加载 Oh My Vim 用户 vimrc.bundles 配置
-    if filereadable(expand("~/.vimrc.bundles"))
-        source ~/.vimrc.bundles
-    endif
 " }}}
 
 " 设置基础配置 {{{
