@@ -73,6 +73,26 @@
     " NERDTree Tabs 配置优化 {{{
         map <Leader>n <plug>NERDTreeTabsToggle<CR>
     " }}}
+    " Tagbar 配置优化 {{{
+        nmap <F8> :TagbarToggle<CR>
+    " }}}
+    " Airline 配置优化 {{{
+        let g:airline#extensions#tabline#enabled = 1
+    " }}}
+    " Javacomplete2 配置优化 {{{
+        autocmd FileType java setlocal omnifunc=javacomplete#Complete 
+        nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+        imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+
+        nmap <F5> <Plug>(JavaComplete-Imports-Add)
+        imap <F5> <Plug>(JavaComplete-Imports-Add)
+
+        nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+        imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+
+        nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+        imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+    " }}}
 " }}}
 
 

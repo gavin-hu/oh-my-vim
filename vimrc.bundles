@@ -29,7 +29,14 @@
 
     " Golang {{{
      	if count(g:bundle_groups, 'golang')
-            Plugin 'fatih/vim-go'
+            Plugin 'fatih/vim-go'                               " Go IDE 插件
+        endif
+    " }}}
+     
+    " Java {{{
+        if count(g:bundle_groups, 'java')
+            Plugin 'artur-shaik/vim-javacomplete2'              " Java 自动完成插件
+            Plugin 'mikelue/vim-maven-plugin'                   " Maven 编译工具插件
         endif
     " }}}
 " }}}
